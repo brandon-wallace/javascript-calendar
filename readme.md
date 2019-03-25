@@ -17,7 +17,7 @@
 
 ![screenshot 3](images/screenshot1.jpg)
 
-![screenshot 4](images/screenshot1.jpg)
+![screenshot 4](images/screenshot2.jpg)
 
 # License:
 

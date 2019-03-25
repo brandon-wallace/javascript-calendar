@@ -2,7 +2,7 @@
 
 # Created using Javascript ES6, HTML5, and CSS3.
 
-# Website: https://brandon-wallace.github.io/calendar
+# Website: https://brandon-wallace.github.io/javascript-calendar
 
 # Features:
  * Mobile First

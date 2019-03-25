@@ -1,0 +1,191 @@
+html,
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #111111;
+    background-color: #FFFEEE;
+}
+
+article {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-header {
+    height: 20vh;
+}
+
+.calendar-body {
+    height: 80vh;
+}
+
+.calendar {
+    width: 98vw;
+    height: 98vh;
+    border: 6px solid #000000;
+}
+
+.day-row {
+    width: 100%;
+    height: 5vh;
+    box-shadow: inset 4px 4px #666666,
+                inset 4px -4px #666666,
+                inset -4px 4px #666666,
+                inset -4px -4px #666666;
+}
+
+.day-menu {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+.month-row {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 4px 4px #AAAAAA,
+                inset 4px -4px #AAAAAA,
+                inset -4px 4px #AAAAAA,
+                inset -4px -4px #AAAAAA;
+}
+
+.month-text {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.year-text {
+    margin: 0;
+    font-size: .9rem;
+}
+
+.arrow {
+    border: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.left {
+    transition: transform 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateX(0);
+}
+
+.left:hover {
+    transform: translateX(15px);
+}
+
+.right {
+    transition: transform 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateX(0);
+}
+
+.right:hover {
+    transform: translateX(-15px);
+}
+
+.week-row {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.day {
+    width: 15%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: inset 4px 4px #C6C2C2,
+                inset 4px -4px #C6C2C2,
+                inset -4px 4px #C6C2C2,
+                inset -4px -4px #C6C2C2;
+}
+
+.weekend {
+    background-color: #ECECEC;
+}
+
+.theme {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.theme-button {
+    width: 80px;
+    height: 25px;
+    font-weight: bold;
+    margin-left: .5rem;
+    border: 2px solid #000000;
+    background-color: #ECECEC;
+}
+
+.dark {
+    color: #ECECEC;
+    background-color: #343434;
+}
+
+@media only screen and (min-width: 350px) {
+    .month-text {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .month-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    li {
+        font-size: 1.5rem;
+        font-weight: bold;
+        list-style-type: none;
+    }
+    .year-text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .month-text {
+        font-size: 4rem;
+    }
+    .arrow {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .month-text {
+        font-size: 5rem;
+    }
+    .year-text {
+        font-size: 1.5rem;
+    }
+    .arrow {
+        font-size: 7rem;
+    }
+}

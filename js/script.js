@@ -24,9 +24,9 @@ const highlightTodaysDate = () => {
 
 
 (() => {
-    let num = -Math.abs(5);
-    let blank = startOfMonth2019[month];
-    let days = [...document.querySelectorAll('.day')];
+    let num = -Math.abs(startOfMonth2019[month]);
+    // let blank = startOfMonth2019[month];
+    let days = [...document.querySelectorAll('.day p')];
     days = days.map(e => {
         num += 1;
         if (num > 0 && num < daysInMonth[month]+1) {

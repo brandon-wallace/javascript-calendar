@@ -150,13 +150,19 @@ li {
 .day {
     width: 15%;
     height: 100%;
-    font-weight: bold;
     font-size: 24px;
     font-size: 1.5rem;
+    font-weight: bold;
+    padding: .25rem .35rem;
+    box-sizing: border-box;
     box-shadow: inset 4px 4px #C6C2C2,
                 inset 4px -4px #C6C2C2,
                 inset -4px 4px #C6C2C2,
                 inset -4px -4px #C6C2C2;
+}
+
+.day p {
+    margin: 0;
 }
 
 .weekend {
@@ -183,6 +189,7 @@ li {
 
 .theme-link {
     margin: 0;
+    font-size: .75rem;
 }
 
 .theme-button {

@@ -190,6 +190,10 @@ li {
     font-size: .75rem;
 }
 
+.theme-link a {
+    color: #666666;
+}
+
 .theme-button {
     width: 80px;
     height: 25px;

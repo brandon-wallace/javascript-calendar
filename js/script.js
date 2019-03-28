@@ -1,5 +1,5 @@
 const months = [
-  'JANUARY', 'FEBURARY', 'MARCH', 'APRIL',
+  'JANUARY', 'FEBRUARY', 'MARCH', 'APRIL',
   'MAY', 'JUNE', 'JULY', 'AUGUST',
   'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'
 ];

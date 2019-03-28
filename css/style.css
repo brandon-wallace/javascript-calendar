@@ -26,10 +26,12 @@ article {
 }
 
 .calendar-header {
+    width: 100%;
     height: 20vh;
 }
 
 .calendar-body {
+    width: 100%;
     height: 80vh;
 }
 
@@ -172,23 +174,19 @@ li {
 .theme {
     width: 100%;
     height: 6vh;
-    /*display: -webkit-box;
-    display: -ms-flexbox;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
             justify-content: space-between;
 }
 
-.theme-controls {
-    width: 90%;
-}
-
 .theme-link {
-    margin: 0;
+    margin-right: .5rem;
     font-size: .75rem;
 }
 
@@ -196,9 +194,12 @@ li {
     width: 80px;
     height: 25px;
     font-weight: bold;
-    margin-left: 8px;
     margin-left: .5rem;
     border: 2px solid #000000;
+}
+
+.light {
+    color: #343434;
     background-color: #ECECEC;
 }
 
@@ -226,6 +227,9 @@ li {
         list-style-type: none;
     }
     .year-text {
+        font-size: 1rem;
+    }
+    .theme-link {
         font-size: 1rem;
     }
 }

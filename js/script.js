@@ -23,21 +23,27 @@ const highlightTodaysDate = () => {
 }
 
 
+const displayMonth = () => {
+  let num = -Math.abs(startOfMonth2019[month]);
+  let days = [...document.querySelectorAll('.day p')];
+  days = days.map(e => {
+      num += 1;
+      e.innerHTML = '';
+      if (num > 0 && num < daysInMonth[month]+1) {
+          return e.innerHTML = num;
+      }
+  });
+}
+
+
 (() => {
-    let num = -Math.abs(startOfMonth2019[month]);
-    // let blank = startOfMonth2019[month];
-    let days = [...document.querySelectorAll('.day p')];
-    days = days.map(e => {
-        num += 1;
-        if (num > 0 && num < daysInMonth[month]+1) {
-            return e.innerHTML = num;
-        }
-    });
+    displayMonth();
     highlightTodaysDate();
 })();
 
 
 const displayNext = () => {
+    displayMonth();
     month += 1;
     if (month > 11) {
         month = 11;
@@ -46,6 +52,7 @@ const displayNext = () => {
 }
 
 const displayPrevious = () => {
+    displayMonth();
     month -= 1;
     if (month < 0) {
        month = 0;

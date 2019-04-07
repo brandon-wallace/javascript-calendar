@@ -238,9 +238,18 @@ li {
     }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 550px) {
     .month-text {
+        font-size: 3rem;
+    }
+    .arrow {
         font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .month-text {
+        font-size: 3.5rem;
     }
     .arrow {
         font-size: 6rem;
@@ -249,7 +258,7 @@ li {
 
 @media only screen and (min-width: 1200px) {
     .month-text {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .year-text {
         font-size: 1.5rem;

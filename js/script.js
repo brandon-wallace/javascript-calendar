@@ -17,7 +17,7 @@ const highlightTodaysDate = () => {
     document.querySelector('.month-text').innerHTML = months[month];
     for (let i = 0; i < days.length; i++) {
         if (i === today) {
-           document.querySelectorAll('.day')[i+startOfMonth2019[month]-1].style.backgroundColor = '#50C4FE';
+           document.querySelectorAll('.day')[i+startOfMonth2019[month]-1].style.boxShadow = 'inset 6px 6px 0 #50C4FE, inset -6px -6px 0 #50C4FE';
         }
     }
 }
